@@ -7,6 +7,8 @@ let step_header = document.getElementById("step_header");
 let step_info = document.getElementById("step_info");
 let i, x = document.getElementsByClassName("step");
 
+let progress = document.getElementsByClassName("progress-bar");
+
 showTab(currentTab);
 
 
@@ -68,6 +70,7 @@ function nextPrev(n) {
    stepNumber = x[n].innerHTML; 
   
 
+   //update text and progress bar
    switch (n) {
     case n:
         console.log(n);

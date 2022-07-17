@@ -22,6 +22,9 @@ body{
     height: 100vh;
 }
 
+input.form-control{
+  padding: 10px;
+}
 .wizard-box{
  
     background-color:var(--secondary-color);
@@ -29,6 +32,18 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     height: 100vh;
 
+
+}
+
+.wizard-box .progress{
+  display: none;
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 0 auto;
+}
+
+.wizard-box .progress > .progress-bar{
+  background-color: #18181a;
 }
 
 .container-fluid{
@@ -175,6 +190,7 @@ body{
   }
   
 
+
   @media (max-width:992px) {
     .steps ul{
        gap: 10px;
@@ -189,6 +205,15 @@ body{
       width:100%;
        
     }
+    .wizard-form .card{
+      max-width: 500px;
+      width: 400px;
+      margin: 30px auto;
+    }
+    .steps ul{
+        gap: 5px;
+        
+     }
 
     .wizard-box #step_number{
         margin-top: 10px;
@@ -199,10 +224,33 @@ body{
 
   @media(max-width:480px){
     .wizard-form .card{
-        padding: 15px;
+      max-width: 500px;
+      width: 400px;
+      margin: 30px auto;
     }
     .steps ul{
-        gap: 5px;
+        gap: 3px;
         
+     }
+  }
+
+  
+  @media(max-width:400px){
+    .wizard-form .card{
+      max-width: 500px;
+      width: 300px;
+      margin: 50px auto;
+    }
+    .steps ul{
+        display: none;
+        
+     }
+     .wizard .progress{
+      display: block;
+      max-width: 300px;
+    width: 300px;
+    margin-top: 22px !important;
+      
+      
      }
   }
